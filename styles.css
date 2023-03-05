@@ -379,6 +379,7 @@ footer>.container>.footer-nav>p {
 
     .main-container {
         text-align: center;
+        padding-bottom: 2em;
     }
 
     .main-container>.container {
