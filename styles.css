@@ -221,7 +221,8 @@ section {
 
   
 .hero-image {
-    flex: 3;
+    flex: 2;
+    width: 350px;
 }
 
 .button {
