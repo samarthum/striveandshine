@@ -194,6 +194,18 @@ section {
     padding: 0.5em 0.25em;
 }
 
+.hero__ball-gif {
+    position: relative;
+}
+
+.hero__ball-gif::after {
+    content: url('images/ball.gif');
+    position: absolute;
+    display: inline-block;
+    bottom: -15px;
+    left: -5px;
+}
+
 .hero-text {
     font-weight: 800;
     font-size: 4.5rem;
@@ -431,6 +443,10 @@ footer>.container>.footer-nav>p {
     .hero-text {
         font-size: 4rem;
         line-height: 1.1;
+    }
+
+    .hero__ball-gif {
+        display: none;
     }
 
     .about-us>.container>.section-left {
