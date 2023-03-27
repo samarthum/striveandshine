@@ -84,6 +84,10 @@ li {
 
 
 /* Utility */
+.text-underline {
+    text-decoration: underline; 
+    text-underline-offset: 2px;
+}
 
 /* Styling */
 
@@ -273,11 +277,15 @@ section {
 }
 
 .about-us>.container {
-    max-width: min(1000px, 80%);
+    max-width: min(650px, 95%);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
 }
 
 .about-us {
-    
+    min-height: 400px;
+    padding: 0 2rem;
 }
 
 .our-philosophy {
@@ -307,12 +315,6 @@ h3 {
 .section-left>p,
 .section-right>p {
     padding-top: 2em;
-}
-
-.about-us>.container>.section-left>img {
-    width: 600px;
-    height: 450px;
-    object-fit: cover;
 }
 
 .our-philosophy>.container>.section-right>img {
@@ -368,6 +370,47 @@ h3 {
     padding: 0 0.5em;
 }
 
+/* Styles for .programs class */
+.programs {
+    min-height: 600px;
+    background-color: var(--secondary-accent);
+    color:var(--primary-color);
+    padding-bottom: 2.5em;
+}
+
+.programs>.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+}
+
+.programs__card-container{
+    gap: 0.5rem;
+}
+
+.programs__card {
+    color: var(--primary-color);
+    border-radius: 0;
+    padding: 1rem;
+    width: 325px;
+    min-height: 400px;
+    box-shadow: none;
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+}
+
+.programs__card-header {
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+  
+.programs__list>li{
+    margin-top: 0.35rem;
+}
+
 .btn-secondary {
     background-color: var(--primary-color);
     color: white;
@@ -390,11 +433,19 @@ footer>.container {
 }
 
 footer>.container>.footer-nav>p {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .footer-nav {
     flex: 1;
+}
+
+.footer__address-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
 }
 
 .location-embed {
@@ -420,6 +471,10 @@ footer>.container>.footer-nav>p {
 
     .header__cta {
         display: none;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 
     body {
@@ -481,12 +536,8 @@ footer>.container>.footer-nav>p {
         min-height: auto;
     }
 
-    .about-us>.container>.section-left {
-        display: none;
-    }
-
     .about-us>.container {
-        max-width: 80%;
+        max-width: 100%;
         padding-top: 1em;
         padding-bottom: 2em;
     }
@@ -504,9 +555,37 @@ footer>.container>.footer-nav>p {
         padding: 2em 1em;
     }
 
+    .why-us>.container{
+        gap: 1.5em;
+    }
+
+    .why-us__header {
+        /* font-size: 2.25rem; */
+    }
+    .why-us__card-header {
+        /* font-size: 1.75rem; */
+        line-height: 1.25;
+    }
+
+    .programs{
+        padding-top: 2em;
+    }
+
+    .programs__card {
+        padding: 0.75rem;
+    }
+
     footer>.container {
         max-width: 95%;
         padding: 1em 0;
         gap: 1em;
+    }
+
+    .footer-nav>h2 {
+        text-align: center;
+    }
+
+    .footer__address-container {
+        margin-top: 0.5rem;
     }
 }

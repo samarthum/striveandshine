@@ -10,3 +10,7 @@ navToggle.addEventListener("click", () => {
         navList.setAttribute("data-visible", "false");
     }
 })
+
+navList.addEventListener("click", () => {
+    navList.setAttribute("data-visible", "false");
+})
