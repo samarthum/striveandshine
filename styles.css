@@ -152,6 +152,10 @@ header {
     gap: 2em;
 }
 
+.logo {
+    width: 80px;
+}
+
 .brand {
     padding: 0.75rem 0rem 0.5rem 0.25rem;
 }
@@ -455,6 +459,10 @@ footer>.container>.footer-nav>p {
 }
 
 @media (max-width: 700px) {
+    .logo {
+        width: 60px;
+    }
+
     .primary-nav__list {
         position: absolute;
         text-align: center;
