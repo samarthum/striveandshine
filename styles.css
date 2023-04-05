@@ -556,7 +556,7 @@ footer>.container>.footer-nav>p {
         background-color: rgba(255, 255, 255, 0.975);
         padding: 2em;
         width: 90%;
-        top: 6em;
+        top: 4.75em;
         right: 5%;
         transform: translateX(-150%);
         z-index: 1000;
