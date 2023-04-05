@@ -420,6 +420,87 @@ h3 {
     color: white;
 }
 
+.coaches {
+    min-height: 600px;
+    background-color: var(--secondary-color);
+    padding-bottom: 3.5em;
+    padding-top: 3.5em;
+}
+
+.coaches__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    max-width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.coaches__card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    max-width: min(1200px, 90%);
+    margin: 1em auto;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px 12px 0 0;
+    width: 350px;
+    height: 790px;
+}
+
+.card-header {
+    position: relative;
+    width: 100%;
+    padding-top: 140%;
+    /* padding-bottom: 25%; */
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.card-body h4 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+.card-body ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+  
+.card-body ul li {
+    margin-bottom: 0.5rem;
+}
+
 footer {
     min-height: 200px;
     background-color: var(--primary-color);
@@ -542,7 +623,7 @@ footer>.container>.footer-nav>p {
 
     .card {
         padding: 1.25em;
-        min-height: auto;
+        min-height: fit-content;
     }
 
     .about-us>.container {
@@ -582,6 +663,19 @@ footer>.container>.footer-nav>p {
 
     .programs__card {
         padding: 0.75rem;
+    }
+
+    .coaches {
+        padding: 2em 1em;
+    }
+
+    .coaches__card-container {
+        flex-direction: column;
+        gap: 2.5em;
+    }
+
+    .profile-card {
+        height: fit-content;
     }
 
     footer>.container {
