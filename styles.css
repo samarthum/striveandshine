@@ -684,6 +684,10 @@ footer>.container>.footer-nav>p {
         width: 115%;
     }
 
+    .about-us {
+        padding: 2em 1em;
+    }
+
     footer>.container {
         max-width: 95%;
         padding: 1em 0;
